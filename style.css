@@ -240,3 +240,59 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.extra-app {
+    max-width: 760px;
+    background: linear-gradient(180deg, #fffafd, #fff2f7);
+    border: 2px solid #f6c9da;
+}
+
+.app-top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mini-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    color: #c85a8b;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.app-subtitle {
+    color: #7a3d57;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.form-section {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 18px;
+    padding: 22px;
+    margin-top: 10px;
+}
+
+.button-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button-row button {
+    flex: 1;
+    min-width: 180px;
+}
+
+.secondary-btn {
+    background-color: white !important;
+    color: #a14d71 !important;
+    border: 2px solid #efbfd3 !important;
+}
+
+.fancy-result {
+    background: linear-gradient(180deg, #fff8fc, #ffeef5);
+    border: 2px dashed #e7a1bf;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.6);
+    margin-top: 24px;
+}
