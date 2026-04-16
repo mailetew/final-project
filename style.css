@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff7fb;
+    color: #4b3a42;
+}
+
+.custom-nav,
+.simple-nav {
+    background-color: #ffd9e8;
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.brand-name {
+    color: #7a3d57 !important;
+    font-size: 1.5rem;
+}
+
+.nav-links a,
+.simple-nav a {
+    text-decoration: none;
+    margin: 0 14px;
+    color: #7a3d57;
+    font-weight: bold;
+}
+
+.nav-links a:hover,
+.simple-nav a:hover {
+    color: #c85a8b;
+}
+
+.hero {
+    background: linear-gradient(180deg, #ffdbe9, #fff7fb);
+    padding: 90px 20px 70px;
+}
+
+.hero-title {
+    font-size: 3.2rem;
+    color: #7a3d57;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: #a14d71;
+}
+
+.hero-text {
+    max-width: 850px;
+    margin: 25px auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.main-btn {
+    margin: 8px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.pink-btn {
+    background-color: #e97aa8;
+    color: white;
+    border: none;
+}
+
+.white-btn {
+    background-color: white;
+    color: #a14d71;
+    border: 2px solid #f0a8c5;
+}
+
+.dark-btn {
+    background-color: #a14d71;
+    color: white;
+    border: none;
+}
+
+.cute-card,
+.feature-box,
+.resume-card,
+.app-card {
+    background-color: white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(233, 122, 168, 0.15);
+}
+
+.cute-card h2,
+.section-title,
+.feature-box h3,
+.resume-card h1,
+.app-card h1 {
+    color: #a14d71;
+}
+
+.project-section {
+    margin-bottom: 60px;
+}
+
+.small-btn {
+    background-color: #ffd9e8;
+    color: #7a3d57;
+    border-radius: 25px;
+    padding: 10px 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #ffd9e8;
+    color: #7a3d57;
+}
+
+.page-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.resume-card h2,
+.app-card label {
+    color: #a14d71;
+    margin-top: 20px;
+}
+
+.resume-card h3 {
+    margin-top: 18px;
+    color: #7a3d57;
+}
+
+.resume-card ul {
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+.app-card {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app-card select,
+.app-card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #efbfd3;
+    font-size: 1rem;
+}
+
+.app-card button {
+    background-color: #e97aa8;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.result-box {
+    margin-top: 20px;
+    background-color: #fff1f7;
+    border: 2px dashed #e7a1bf;
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 1.05rem;
+}
+.app-card {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.app-card h1 {
+    text-align: center;
+}
+
+.app-card p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.app-card label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #a14d71;
+}
+
+.app-card select,
+.app-card button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #efbfd3;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.app-card button {
+    background-color: #e97aa8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.app-card button:hover {
+    background-color: #d86495;
+}
+
+.result-box {
+    margin-top: 20px;
+    background-color: #fff1f7;
+    border: 2px dashed #e7a1bf;
+    border-radius: 16px;
+    padding: 20px;
+    font-size: 1.05rem;
+    white-space: pre-line;
+    line-height: 1.7;
+}
+a {
+    color: #a14d71;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maile Tew | Outfit Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="simple-nav">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="scratch.html">Music</a>
+        <a href="app.html">Outfit Picker</a>
+    </nav>
+
+    <div class="page-wrapper">
+        <div class="app-card">
+            <h1>Outfit Picker</h1>
+            <p>Choose your occasion, weather, and style to get a fun outfit idea.</p>
+
+            <label for="occasion">Occasion</label>
+            <select id="occasion">
+                <option value="casual">Casual</option>
+                <option value="school">School</option>
+                <option value="date">Date</option>
+                <option value="workout">Workout</option>
+                <option value="church">Church</option>
+            </select>
+
+            <label for="weather">Weather</label>
+            <select id="weather">
+                <option value="hot">Hot</option>
+                <option value="mild">Mild</option>
+                <option value="cold">Cold</option>
+                <option value="rainy">Rainy</option>
+            </select>
+
+            <label for="style">Style</label>
+            <select id="style">
+                <option value="comfy">Comfy</option>
+                <option value="trendy">Trendy</option>
+                <option value="classic">Classic</option>
+                <option value="girly">Girly</option>
+            </select>
+
+            <button onclick="generateOutfit()">Pick My Outfit</button>
+
+            <div id="result" class="result-box">
+                Your outfit idea will appear here
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generateOutfit() {
+            const occasion = document.getElementById("occasion").value;
+            const weather = document.getElementById("weather").value;
+            const style = document.getElementById("style").value;
+
+            let top = "";
+            let bottom = "";
+            let shoes = "";
+            let accessory = "";
+            let colors = "";
+            let vibe = "";
+
+            if (occasion === "casual") {
+                top = "a cute fitted top";
+                bottom = "straight leg jeans";
+                vibe = "easy and put together";
+            } else if (occasion === "school") {
+                top = "a comfy sweater or clean basic tee";
+                bottom = "jeans or casual pants";
+                vibe = "cute and practical";
+            } else if (occasion === "date") {
+                top = "a dressy top or a cute dress";
+                bottom = "a skirt or flattering jeans";
+                vibe = "polished and confident";
+            } else if (occasion === "workout") {
+                top = "a workout tank or athletic top";
+                bottom = "leggings or biker shorts";
+                vibe = "sporty and energized";
+            } else {
+                top = "a pretty blouse or modest dress top";
+                bottom = "a skirt or dress pants";
+                vibe = "clean and classy";
+            }
+
+            if (weather === "hot") {
+                shoes = "sandals or clean white sneakers";
+                colors = "light pink, cream, or soft blue";
+            } else if (weather === "mild") {
+                shoes = "sneakers or ankle boots";
+                colors = "blush, white, or light denim";
+            } else if (weather === "cold") {
+                shoes = "boots or closed toe sneakers";
+                colors = "rose, tan, or soft gray";
+                top += " with a warm jacket";
+            } else {
+                shoes = "water resistant boots or sneakers";
+                colors = "soft gray, pink, or cream";
+                top += " with a light rain jacket";
+            }
+
+            if (style === "comfy") {
+                accessory = "a tote bag and simple earrings";
+            } else if (style === "trendy") {
+                accessory = "layered jewelry and a cute shoulder bag";
+            } else if (style === "classic") {
+                accessory = "simple gold jewelry and a structured bag";
+            } else {
+                accessory = "a bow, dainty jewelry, and a cute purse";
+            }
+
+            const resultText =
+                "Your outfit vibe: " + vibe + ".\n\n" +
+                "Top: " + top + "\n" +
+                "Bottom: " + bottom + "\n" +
+                "Shoes: " + shoes + "\n" +
+                "Accessory: " + accessory + "\n" +
+                "Suggested colors: " + colors;
+
+            document.getElementById("result").innerText = resultText;
+        }
+    </script>
+
+</body>
+</html>
